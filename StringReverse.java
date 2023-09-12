@@ -1,29 +1,13 @@
-package Zeri;
-
+package StringProg;
+import java.util.Scanner;
 public class StringReverse {
     public static void main(String[] args) {
-        String str="Java is a programming language";
-        char []charArray=str.toCharArray();
-        for (int i = charArray.length-1; i >=0  ; i--) {
-            System.out.print(str.charAt(i));
-        }
-    }
-}
-
-class StringReverse2{
-    public static void main(String[] args) {
-        String str="Java is a programming language",res="";
-        for (int i = 0; i <str.length() ; i++) {
-             res=str.charAt(i)+res;
-        }
-        System.out.println(res);
-    }
-}
-
-class StringReverse3{
-    public static void main(String[] args) {
-        String str="Java is a programming language";
+        Scanner sc=new Scanner(System.in);
+        String str="Reverse String";
         StringBuilder sb=new StringBuilder(str);
-        System.out.println(sb.reverse());
+        sb.reverse();
+        sb.length();
+        System.out.println(sb);
+        System.out.println(sb.length());
     }
 }
